@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/styles.css"/>
+    <title>Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <img class = "logo1" src="../images/spaceship.png" alt="image of a spaceship">
+    <img class = "logo2" src="../images/spaceship.png" alt="image of a spaceship">
+
+    <h1>REGISTER NOW</h1>
+    <p style = "margin-left: 0px;"> Flying Space Dreams To Outer Space Realities</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="details.html">Details</a></li>
+            <li><a class="active" href="registration.html">Registration</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+
+<table border="1">
+    <caption>Registration</caption>
+   <tr >
+    <th width = "150">Participation Type</th>
+    <th width = "150">Sessions</th>
+    <th width = "150">From</th>
+    <th width = "150">To</th>
+    <th width = "150">Cost($)</th>
+   </tr>
+
+   <tr>
+    <td>Presenter (500$)<input type = "radio" name = "participantType" value="500"></td>
+    <td>Sessions 1(20$) <input type = "checkbox" name = "session" data-price = "20" value="1"></td>
+    <td><input id="fromDate" type = "date"></td>
+    <td><input id="toDate" type = "date"></td>
+    <td><div class="output-box" id="outputBox1"></div></td>
+   </tr>
+
+   <tr>
+    <td>Audience (200$)<input type = "radio" name = "participantType" value="200"></td>
+    <td>Sessions 2(10$)<input type ="checkbox" name="session" data-price="10" value="2"></td>
+    <td></td>
+    <td></td>
+    <td><div class="output-box" id="outputBox2"></div></td>
+   </tr>
+
+   <tr>
+    <td></td>
+    <td>Sessions 3(6$)<input type ="checkbox" name="session" data-price="6" value="3"></td>
+    <td></td>
+    <td></td>
+    <td><div class="output-box" id="outputBox3"></div></td>
+    </tr>
+
+   <tr>
+    <td></td>
+    <td>Sessions 4(8$)<input type ="checkbox" name="session" data-price="8" value="4"></td>
+    <td></td>
+    <td></td>
+    <td><div class="output-box" id="outputBox4"></div></td>
+   </tr>
+
+   <tfoot>
+    <tr>
+        <td colspan="4">Total Cost: <div class="output-box" id="outputBox5"></div></td>
+        <td><input type="button" value="calculate" onclick="sumValues()"></td>
+    </tr>
+   </tfoot>
+</table>
+
+<p>NB: Select More Than 2 Sessions At Once To Recieve A 15% Discount To Space!!!!</p>
+<script src = "../Javascript/script.js" charset="utf-8"></script>
+</body>
+<footer>
+    <p class="floating">&copy; 2024 Future Space Pioneers Workshop. All rights reserved.</p>
+</footer>
+</body>
+</html>
